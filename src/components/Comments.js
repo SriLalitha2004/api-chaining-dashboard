@@ -51,7 +51,7 @@ class Comments extends React.Component {
                     <Link to="/" className="mr-10">Dashboard</Link>
                     <Link to="/add" >Add</Link></div>
 
-                <input type='number' name="postid" id="postid" placeholder="Enter post id(numbers only)" value={this.state.postid} onChange={(e)=>{this.setState({postid:e.target.value});}}/>
+                <input type='number' name="postid" id="postid" placeholder="Enter post id(numbers only)" value={this.state.postid} onChange={(e)=>{this.setState({postid:e.target.value});}}/><br />
                 <button type='button' onClick={this.handleSubmit}>Submit</button>
             </div>
         );
