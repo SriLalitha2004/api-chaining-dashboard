@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import axios from 'axios';
 
 class Comments extends React.Component {
@@ -20,11 +19,11 @@ class Comments extends React.Component {
         const {comment} = this.state
         
        if (comment != null && comment.length) {
-            return <div>
+            return <div className="App-header container mx-auto px-4 overflow-x-auto">
                 <table className="table min-w-full bg-white table-auto border-collapse border border-gray-300">
             <thead>
                 <tr className="bg-gray-200 text-left">
-                    <th className="px-4 py-2 border border-gray-300">Name</th>
+                    <th className="px-4 py-2 border border-white-300">Name</th>
                     <th className="px-4 py-2 border border-gray-300">body</th>
                     <th className="px-4 py-2 border border-gray-300">email</th>
                 </tr>

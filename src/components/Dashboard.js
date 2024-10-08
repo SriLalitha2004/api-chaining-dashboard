@@ -18,7 +18,7 @@ const Dashboard=()=>{
     return <div className="App-header container mx-auto px-4 overflow-x-auto">
     <Link to="/add">Add</Link>
     <Link to="/comments">Comments</Link>
-        <table className="table min-w-full bg-white table-auto border-collapse border border-gray-300">
+        <table className="w-100 table min-w-full bg-Primary text-white table-auto border-collapse border border-white-300">
             <thead>
                 <tr className="bg-gray-200 text-left">
                     <th className="px-4 py-2 border border-gray-300">Name</th>
