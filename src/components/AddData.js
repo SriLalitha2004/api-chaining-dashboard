@@ -24,9 +24,9 @@ const AddData=()=>{
         <div style={{marginBottom: "10px"}}>
                     <Link to="/" className="mr-10">Dashboard</Link>
                     <Link to="/comments" >Comments</Link></div>
-            <input type="text" id="title" name="title" onChange={handleChange}/>
-            <input type="text" id="body" name="body" value={userInput.body} onChange={handleChange}/>            
-            <input type="number" id="userid" name="userid" value={userInput.userid} onChange={handleChange}/>
+            <input placeholder="Enter the title" type="text" id="title" name="title" onChange={handleChange}/><br/>
+            <input placeholder="Enter the body" type="text" id="body" name="body" value={userInput.body} onChange={handleChange}/>  <br />          
+            <input placeholder="Enter the userId" type="number" id="userid" name="userid" value={userInput.userid} onChange={handleChange}/><br />
             <button type="button" onClick={handleSubmit}>submit</button>
         </form>
     </>
