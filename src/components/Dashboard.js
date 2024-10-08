@@ -15,10 +15,12 @@ const Dashboard=()=>{
         .catch(err=>console.log(err))
     }, [stdData]);
   
-    return <div className="App-header container mx-auto px-4 overflow-x-auto">
-    <Link to="/add">Add</Link>
-    <Link to="/comments">Comments</Link>
-        <table className="w-100 table min-w-full bg-Primary text-white table-auto border-collapse border border-white-300">
+    return <div className="container mx-auto px-4 overflow-x-auto">
+        <h1>Dashboard</h1>
+    <div style={{marginBottom: "10px"}}>
+         <Link to="/add" className="mr-10">Add</Link>
+        <Link to="/comments" >Comments</Link></div>
+        <table className="custom-table w-100 table min-w-full bg-Primary text-white table-auto border-collapse border border-white-300">
             <thead>
                 <tr className="bg-gray-200 text-left">
                     <th className="px-4 py-2 border border-gray-300">Name</th>

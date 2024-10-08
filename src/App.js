@@ -1,8 +1,10 @@
-import './App.css';
+
 import AddData from './components/AddData';
 import Comments from './components/Comments';
 import Dashboard from './components/Dashboard';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import './custom.css';
 
 function App() {
   return (

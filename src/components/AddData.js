@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 const AddData=()=>{
     const [userInput, setUserInput] = useState({
@@ -20,6 +21,9 @@ const AddData=()=>{
     }
     return <>
         <form className="container">
+        <div style={{marginBottom: "10px"}}>
+                    <Link to="/" className="mr-10">Dashboard</Link>
+                    <Link to="/comments" >Comments</Link></div>
             <input type="text" id="title" name="title" onChange={handleChange}/>
             <input type="text" id="body" name="body" value={userInput.body} onChange={handleChange}/>            
             <input type="number" id="userid" name="userid" value={userInput.userid} onChange={handleChange}/>
